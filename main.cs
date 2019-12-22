@@ -5,10 +5,13 @@ class MainClass {
 
     Console.WriteLine ("How old are you?");
     var yourAge = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine($"{yourAge}");
     if(yourAge < 27){
       Console.WriteLine("You are younger than me.");
+    } else if (yourAge > 27) {
+      Console.WriteLine("You are older than me.");
     } else {
-      Console.WriteLine("I'm older than you.");
+      Console.WriteLine("You are NOT younger than me.");
     };
 
   }
